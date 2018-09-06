@@ -1,0 +1,56 @@
+@import '../../style/colours';
+
+:local(.button) {
+  appearance: none;
+  background: $color-primary;
+  font-size: 16px;
+  border: none;
+  margin: 0;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  color: #FFF;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.6;
+  }
+}
+
+// TYPES
+:local(.typePrimary) {
+  background: $color-primary;
+
+  &:hover {
+    background: darken($color-primary, 5%);
+  }
+}
+
+:local(.typeSecondary) {
+  background: $color-grey-10;
+  color: $color-grey-80;
+
+  &:hover {
+    background: darken($color-grey-10, 5%);
+  }
+}
+
+:local(.typeNegative) {
+  background: $color-negative;
+
+  &:hover {
+    background: darken($color-negative, 5%);
+  }
+}
+
+// SIZES
+:local(.sizeSmall) {
+  font-size: 14px;
+}
+
+:local(.sizeMedium) {
+  font-size: 16px;
+}
+
+:local(.sizeLarge) {
+  font-size: 18px;
+}

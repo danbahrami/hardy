@@ -4,8 +4,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "mdx-go docs"
+  },
   "dependencies": {
     "@mdx-js/tag": "^0.15.0",
     "react": "^16.4.2"
+  },
+  "devDependencies": {
+    "mdx-go": "^1.1.5",
+    "postcss": "^6.0.21",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-scss": "^1.0.4",
+    "precss": "^3.1.2"
   }
 }
